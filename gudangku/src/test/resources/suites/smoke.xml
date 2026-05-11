@@ -6,15 +6,21 @@
     </listeners>
     <parameter name="browser" value="chrome"/>
 
-    <test name="Auth - Login Basic Auth">
+    <test name="Login Page">
         <classes>
             <class name="user.LoginPageTest"/>
         </classes>
     </test>
 
-    <test name="Navbar - Navbar Menu Button">
+    <test name="Navbar Menu">
         <classes>
             <class name="user.NavbarMenuTest"/>
+        </classes>
+    </test>
+
+    <test name="Landing Page Test">
+        <classes>
+            <class name="user.LandingPageTest"/>
         </classes>
     </test>
 
