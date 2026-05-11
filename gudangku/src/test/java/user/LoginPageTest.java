@@ -3,18 +3,18 @@ package user;
 import core.BaseTest;
 import core.DriverManager;
 import core.TestUtils;
-import org.example.user.UserCanLoginBasicAuth;
+import org.example.user.LoginPage;
 import org.testng.annotations.Test;
 import org.testng.Assert;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-public class UserCanLoginBasicAuthTest extends BaseTest {
-    private static final Logger logger = LogManager.getLogger(UserCanLoginBasicAuthTest.class);
+public class LoginPageTest extends BaseTest {
+    private static final Logger logger = LogManager.getLogger(LoginPageTest.class);
 
     @Test(priority = 1, groups = {"e2e"}, description = "User can login with valid data", retryAnalyzer = core.RetryAnalyzer.class)
     public void testUserCanLoginWithValidData() {
-        UserCanLoginBasicAuth loginPage = new UserCanLoginBasicAuth(DriverManager.getDriver());
+        LoginPage loginPage = new LoginPage(DriverManager.getDriver());
 
         logger.info("Step 1: User open the login page");
         // navigation handled by BaseTest.setUp()

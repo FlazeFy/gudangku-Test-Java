@@ -5,7 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class UserCanLoginBasicAuth extends BasePage {
+public class LoginPage extends BasePage {
     @FindBy(id = "username-input")
     private WebElement inputUsername;
 
@@ -15,7 +15,7 @@ public class UserCanLoginBasicAuth extends BasePage {
     @FindBy(id = "submit-login-btn")
     private WebElement signInButton;
 
-    public UserCanLoginBasicAuth(WebDriver driver) {
+    public LoginPage(WebDriver driver) {
         super(driver);
     }
 
@@ -23,7 +23,7 @@ public class UserCanLoginBasicAuth extends BasePage {
         waitForElementToBeVisible(inputUsername);
         inputUsername.sendKeys(username);
         inputPassword.sendKeys(password);
-        signInButton.click(); // was signInButtonId (broken reference)
+        signInButton.click();
     }
 
     public boolean verifyRedirectToLanding() {

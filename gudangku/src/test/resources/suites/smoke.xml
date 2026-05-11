@@ -8,7 +8,13 @@
 
     <test name="Auth - Login Basic Auth">
         <classes>
-            <class name="user.UserCanLoginBasicAuthTest"/>
+            <class name="user.LoginPageTest"/>
+        </classes>
+    </test>
+
+    <test name="Navbar - Navbar Menu Button">
+        <classes>
+            <class name="user.NavbarMenuTest"/>
         </classes>
     </test>
 
