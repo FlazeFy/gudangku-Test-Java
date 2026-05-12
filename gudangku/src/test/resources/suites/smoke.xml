@@ -24,4 +24,10 @@
         </classes>
     </test>
 
+    <test name="History Page Test">
+        <classes>
+            <class name="user.HistoryPageTest"/>
+        </classes>
+    </test>
+
 </suite>
